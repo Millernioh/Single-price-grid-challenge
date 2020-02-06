@@ -1,0 +1,105 @@
+/********************************************TAGS**************************/
+body{
+  background-color:hsl(218, 22%, 67%);
+  font-family: "karla";
+    font-size:16px;
+    border-radius: 5%;
+    border:1px;
+}
+h1{
+  color:hsl(179, 62%, 43%);
+}
+h2{
+  color:#fff;
+}
+p {
+  color:hsl(204, 43%, 93%);
+}
+ul{
+  text-align: left;
+}
+
+li{
+  list-style-type: none;
+  color:hsl(204, 43%, 93%);
+}
+/********************************************CLASS*************************/
+.container{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  margin: 15% 20%;
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.25);
+}
+.top-content{
+  background-color: #fff;
+  grid-column: span 12;
+  padding:3% 5%;
+  box-shadow: inherit;
+  /* border-radius: 5px; */
+}
+.sub-heading{
+  color:hsl(71, 73%, 54%);
+}
+.left-content{
+  grid-column: span 6;
+  background-color:#2ab2af;
+  padding:3% 5%;
+  box-shadow: inherit;
+  /* border-radius: 3%; */
+
+}
+.sign-up{
+  background-color:#f1fa3c;
+  color:#fff;
+  padding:8px 90px;
+  border-radius:4px;
+  border:1px;
+  display:inline-block;
+  font-size: 16px;
+  font-weight:bold;
+  text-decoration: none;
+  margin-top:9px;
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.25);
+
+}
+.dollar{
+  font-size: 40px;
+  margin-left:4px;
+  font-weight: bold;
+  color:#fff;
+}
+.right-content{
+  grid-column: span 6;
+  background-color:#48bfbd;
+  padding:3% 5%;
+  box-shadow: inherit;
+  /* border-radius: 3%; */
+}
+.para{
+  line-height: 0.5;
+}
+@media only screen and (max-width:375px){
+  .container{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: ;
+  margin: 15% 20%;
+  }
+  .left-content{
+  grid-column: span 12;
+  padding:3% 5%;
+  box-shadow: inherit;
+
+  }
+   .right-content{
+  grid-column: span 12;
+  padding:3% 5%;
+  box-shadow: inherit;
+  line-height:1.5;
+
+  }
+  .sign-up{
+    padding:5px 50px;
+  }
+}
